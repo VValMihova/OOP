@@ -5,6 +5,15 @@ import java.text.DecimalFormat;
 public class Vehicle {
     private double fuelQuantity;
     private double fuelConsumption;
+    private double tankCapacity;
+
+    public double getTankCapacity() {
+        return tankCapacity;
+    }
+
+    public void setTankCapacity(double tankCapacity) {
+        this.tankCapacity = tankCapacity;
+    }
 
     public double getFuelQuantity() {
         return fuelQuantity;
