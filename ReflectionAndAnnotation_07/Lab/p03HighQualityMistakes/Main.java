@@ -11,7 +11,7 @@ public class Main {
 
         Class clazz = Reflection.class;
 
-        Field[] fields = clazz.getFields();
+        Field[] fields = clazz.getDeclaredFields();
         Arrays.stream(fields).filter(field -> !Modifier.isPrivate(field.getModifiers()))
                 .sorted(Comparator.comparing(Field::getModifiers))
                 .forEach(field -> System.out.printf("%s must be private!%n", field.getName()));
