@@ -9,8 +9,4 @@ public class Chocolate extends BaseFood implements Food {
         super(grams, CALORIES_PER_100_GRAMS);
     }
 
-    @Override
-    public double getKilograms() {
-        return ;
-    }
 }
